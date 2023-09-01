@@ -6,7 +6,9 @@ const UserPage = ()=>{
     let [st, setSt] = useState(false);
     // console.log(x);
     function handleClick(){
-        setSt(true);
+        if(data){
+            setSt(true)
+        }
     }
     return (
         <>
@@ -23,15 +25,12 @@ const UserPage = ()=>{
           </tr>
           </thead>
         {
-            !st && "No data found to display."
-        }
-        {
-            !data && "No data found to display."
+            !st && "No data found"
         }
           <tbody>
 
           {
-              data && st && data.map((e)=>(
+              st && data.map((e)=>(
                   
                   <tr key={e.id}>
                     <td>{e.first_name}</td>
