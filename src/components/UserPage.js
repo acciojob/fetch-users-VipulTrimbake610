@@ -23,7 +23,7 @@ const UserPage = ()=>{
           </tr>
           </thead>
         {
-            !st && "No data found to display"
+            !st && "No data found to display."
         }
           <tbody>
 
