@@ -25,6 +25,9 @@ const UserPage = ()=>{
         {
             !st && "No data found to display."
         }
+        {
+            !data && "No data found to display."
+        }
           <tbody>
 
           {
